@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+}
+.grid-container{
+    background-color: yellowgreen;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(10,10vw);
+    grid-template-rows: repeat(10, 10vh);
+
+    grid-template-areas: 
+    "home home home home home home link-items link-items link-items link-items"
+    ;
+}
+nav {
+    background-color: #ffffff;
+    align-items: center;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+.home {
+    grid-area: home;
+    border-left: 2px solid black;
+}
+.bild_1 {
+    width: 75px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.link_items {
+    grid-area: link-items;
+    border-right: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.link {
+    text-decoration: none;
+    color: black;    
+    font-size: 1.5em;
+    padding: 100% 50px;
+    transition: 0.3s ease;
+}
+
+.link:hover {
+font-size: 1.9em;
+}
